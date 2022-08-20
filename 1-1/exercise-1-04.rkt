@@ -6,6 +6,4 @@
 (define (a-plus-abs-b a b)
   ((if (> b 0) + -) a b))
 
-; the expression (if (> b 0) + -) is a conditional that decides whether the following expression is
-; (+ a b) or (- a b) depending on whether b is positive or negative. in other words, it's a function
-; returning an operation. interesting implications!
+;; the expression (if (> b 0) + -) is a conditional that decides whether the following expression is (+ a b) or (- a b) depending on whether b is positive or negative. in other words, it's a function returning an operation. interesting implications!

@@ -8,14 +8,18 @@
 (define (square x)
   (* x x))
 
-(define (3rt x) 
-    (define (good-enough? guess)
-        (= (improve guess x) guess))
-    (define (improve guess)
-        (/ (+ (/ x (square guess))
-              (* 2 guess))
-           3))
-    (define (3rt-iter guess) 
-      (if (good-enough? guess x) guess
-          (3rt-iter (improve guess x) x)))
-  (3rt-iter 1.1 x))
+(define (3rt x)
+  
+  (define (good-enough? guess)
+    (= (improve guess) guess))
+  
+  (define (improve guess)
+    (/ (+ (/ x (square guess))
+          (* 2 guess))
+       3))
+  
+  (define (3rt-iter guess) 
+    (if (good-enough? guess) guess
+        (3rt-iter (improve guess))))
+  
+  (3rt-iter 1.1))

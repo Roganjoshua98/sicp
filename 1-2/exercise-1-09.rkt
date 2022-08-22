@@ -32,8 +32,8 @@
 ; (add2 2 7)
 ; ... and so on
 
-; add1 is recursive, since it builds up a chain of deferred operators (i.e it
-; has to eventually inc a times on b)
-; add2 meanwhile stores state variable a and b, with its structure just calling
-; itself again with a new state. This does not build up any chain, and can be
-; called starting from any step in the process
+;; add1 is recursive, since it builds up a chain of deferred operators (i.e it
+;; has to eventually inc a times on b)
+;; add2 meanwhile stores state variable a and b, with its structure just calling
+;; itself again with a new state. This does not build up any chain, and can be
+;; called starting from any step in the process

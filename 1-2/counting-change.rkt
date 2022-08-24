@@ -20,6 +20,7 @@
         ((= n 3) 10)
         ((= n 4) 25)
         ((= n 5) 50)))
+        
 (define (recur-change a)
   (define (change-count a n)
     (cond ((= a 0) 1)
@@ -34,15 +35,15 @@
 
 ;; Come back to this later?
 
-(define (iter-change a)
+; (define (iter-change a)
   
-  (define (first-denom n)
-    (cond ((= n 1) 1)
-          ((= n 2) 5)
-          ((= n 3) 10)
-          ((= n 4) 25)
-          ((= n 5) 50)))
+;   (define (first-denom n)
+;     (cond ((= n 1) 1)
+;           ((= n 2) 5)
+;           ((= n 3) 10)
+;           ((= n 4) 25)
+;           ((= n 5) 50)))
 
-  (define (change-count a n))
+;   (define (change-count a n))
   
-  (change-count a 5))
+;   (change-count a 5))

@@ -1,6 +1,6 @@
 #lang sicp
 
-; Exercise 1-22
+; Exercise 1.22
 ; Most Lisp implementations include a prim- itive called runtime that returns an integer that
 ; specifies the amount of time the system has been running (mea- sured, for example, in microseconds).
 ; The following timed- prime-test procedure, when called with an integer n, prints n and checks to see
